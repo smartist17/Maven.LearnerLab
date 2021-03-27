@@ -7,10 +7,11 @@ package io.zipcoder.interfaces;
         }
 
 
-        public void teach(Learner learner, double numberOfHours) {
+        public double teach(Learner learner, double numberOfHours) {
 
             learner.learn(numberOfHours);
-
+            double result = learner.learn(numberOfHours);
+            return result;
         }
 
         public double lecture(Learner[] learners, double numberOfHours) {
